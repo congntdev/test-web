@@ -1,6 +1,5 @@
-package com.example.testweb.dto.request;
+package com.example.testweb.dto.response;
 
-import com.example.testweb.dto.Validator.ClassName;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -8,8 +7,8 @@ import java.util.Date;
 
 @Data
 @Accessors(chain = true)
-public class CourseRequest {
-    @ClassName
+public class CourseResponse {
+    Long id;
     String className;
     String lecture;
     Date startTime;
@@ -17,4 +16,5 @@ public class CourseRequest {
     Long room;
     Date createdAt;
     Date updatedAt;
+
 }
